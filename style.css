@@ -167,7 +167,8 @@ p {
     position: absolute;
     top: 10%;
     left: 40%;
-    animation: rot 3s linear infinite;
+    left: 30%;
+    animation: rot1 4s linear infinite alternate-reverse;
 }
 
 .aboutplanetright {
@@ -381,6 +382,17 @@ z-index: 99;
         }
         100% {
             transform: rotate(360deg) translate(300px) rotate(-360deg);
+        }
+
+
+    }
+    @keyframes rot1{
+       
+        0% {
+            transform: rotate(0deg) translate(200px) rotate(0deg);
+        }
+        100% {
+            transform: rotate(-360deg) translate(200px) rotate(360deg);
         }
 
 
